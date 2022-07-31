@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<title>Sign Up Form</title>
+
+<body>
+
+    <h2> Sign up for this service!</h2>
+    <p> This service is great. Give us your data, please.</p>
+    <div id="container">
+        <div id="containerLeftSide">Left </div>
+        <div id="containerRightSide">
+            <form action="" method="post">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Your first name" minlength="1"
+                    required>
+
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Your last name" minlength="2" required>
+
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="555-555-5555" minlength="10"
+                    maxlength="10" autocomplete="on" required>
+
+                <label for="user_email">Email Address</label>
+                <input type="email" id="user_email" name="email" placeholder="yourname@example.com" required>
+
+                <label for="user_password">Password:</label>
+                <input type="password" id="user_password" name="password" required>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</body>
+
+</html>
