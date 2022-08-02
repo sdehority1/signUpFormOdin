@@ -16,34 +16,59 @@
     <h2> Sign up for this service!</h2>
     <p> This service is great. Give us your data, please.</p>
     <div id="container">
-        <div id="containerLeftSide">Left </div>
+        <div id="containerLeftSide"> <img id="picture" src="IMAGES/Image.jpg" alt=""></div>
+
         <div id="containerRightSide">
-            <form action="" method="post">
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name" placeholder="Your first name" minlength="1"
-                    required>
-
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" placeholder="Your last name" minlength="2" required>
-
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone_number" placeholder="555-555-5555" minlength="10"
-                    maxlength="10" autocomplete="on" required>
-
-                <label for="user_email">Email Address</label>
-                <input type="email" id="user_email" name="email" placeholder="yourname@example.com" required>
-
-                <label for="user_password">Password:</label>
-                <input type="password" id="user_password" name="password" required>
-
-            </form>
+            <div id="formContainer">
+                <table>
+                    <form action="" method="post">
+                        <tr>
+                            <td> <label for="first_name">First Name</label>
+                            </td>
+                            <td> <input type="text" id="first_name" name="first_name" placeholder="Your first name"
+                                    minlength="1" autocomplete="on" required>
+                            </td>
+                            <td>
+                                <label for="last_name">Last Name</label>
+                            </td>
+                            <td>
+                                <input type="text" id="last_name" name="last_name" placeholder="Your last name"
+                                    minlength="2" autocomplete="on" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone_number">Phone Number</label>
+                            </td>
+                            <td> <input type="tel" id="phone_number" name="phone_number" minlength="10" maxlength="10"
+                                    autocomplete="on" required>
+                            </td>
+                            <td>
+                                <label for="user_email">Email Address</label>
+                            </td>
+                            <td>
+                                <input type="email" id="user_email" name="email" autocomplete="on" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="user_password">Password:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="user_password" name="password" autocomplete="on" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <button type="submit">Submit</button>
+                            </td>
+                            <td> <button type="reset">Reset</button>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
         </div>
     </div>
 
-
-
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
 </body>
 
 </html>
