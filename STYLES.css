@@ -380,19 +380,24 @@ template {
 
 
 /* START HERE  */
-
 #container {
   width: 80%;
   display: flex;
   height: 100vh;
-  padding-left: 10%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+  border-radius: 20px;
+  border: solid;
+  border-color: black;
+  border-width: .5px;
+  overflow: hidden;
 }
 
 #containerLeftSide {
   height: 100%;
   width: 40%;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 #picture {
@@ -404,31 +409,62 @@ template {
   height: 100%;
   width: 60%;
   display: flex;
- 
-  background-color: rgb(211,211,211,0.2);
-
-   /*
+  background-color: rgb(211, 211, 211, 0.2);
+  /*
   https://stackoverflow.com/questions/10021302/how-to-apply-an-opacity-without-affecting-a-child-element-with-html-css*/
-
 }
 
 
-table{
-  width: 100%; 
-  height: 100%; 
+table {
+  width: 100%;
+  height: 100%;
 }
 
-#formContainer{
+#formContainer {
   margin-top: 25%;
-  width: 90%; 
-  border-radius: 20px; 
-  margin-left: 5%; 
-  height: 50%; 
-  background: white; 
+  width: 90%;
+  border-radius: 20px;
+  margin-left: 5%;
+  height: 50%;
+  background: white;
+}
 
+#containerRightSide {
+  display: flex;
+  flex-direction: column;
+}
+
+#introPara {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 0%;
+  height: 10%;
+  text-align: center;
+  justify-content: baseline;
+  border: solid;
 }
 
 .inputDivs {
   width: 100%;
+}
 
+table, th, td {
+  text-align: center;
+  border-collapse: collapse;
+
+}
+
+.labels{
+  height: 1em; 
+}
+
+.inputs{
+  vertical-align: top;
+}
+
+
+.buttons {  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
