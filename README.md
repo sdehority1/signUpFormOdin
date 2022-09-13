@@ -1,2 +1,2 @@
 # Building A Sign Up Form &#128221
-Dropped a table inside a form to keep it tidy and added some minimalist styling to keep it clean. 
+Need to add a font and figure out the javascript to insert the "-"s as needed in the phone number and confirm the passwords. 
