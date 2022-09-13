@@ -382,7 +382,6 @@ template {
 /* START HERE  */
 #header{
   text-align: center;
-
 }
 #container {
   width: 80%;
@@ -428,51 +427,63 @@ table {
   width: 90%;
   border-radius: 20px;
   margin-left: 5%;
-  height: 70%;
+  height: 50%;
   background: white;
   margin-top: 2rem;
   overflow: auto;
-
 }
 
 #containerRightSide {
   display: flex;
   flex-direction: column;
+  height:100%;
 }
 
-#introPara {
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 0%;
-  text-align: center;
-  justify-content: baseline;
-  border: solid;
-}
 
 .inputDivs {
   width: 100%;
 }
 
-table, th, td {
+table, th, td, tr {
   text-align: center;
   border-collapse: collapse;
-
 }
 
 .labels{
   height: 1em; 
+  font-size: medium;
 }
 
 .inputs{
-  vertical-align: top;
+  height: 1em;
 }
 
 
 .buttons {  
+  width: 50%;
+  height: 1.5em;
+  background-color: rgb(211, 211, 211, 0.2): 
+}
+
+.buttonContainer{
+  align-items: center;  
+  width: 50%;
+  height: 10%;
+}
+
+#alreadyMember{
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin:0;
-  height: 100%;
+  justify-content: baseline;
+  height: 10%;
+  font-size: 20px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-radius: 20px;
+  background-color: white;
+  height: 12%;
+}
+
+#alreadyMember:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }

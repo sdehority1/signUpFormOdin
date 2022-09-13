@@ -16,39 +16,34 @@
         <div id="containerLeftSide"> <img id="picture" src="IMAGES/Image.jpg" alt=""></div>
 
         <div id="containerRightSide">
-            <h2 id="header"> Sign up for this service!</h2>
-            <p id="introPara">
-                We're here asking for your data (not really, this is just a student
-                project).
-                When we get that data we'll do some really great things with it, and you'll get to use this service (no
-                you won't)! </p>
+            <h1 id="header"> Sign up for this service!</h1>
             <div id="formContainer">
                 <table>
                     <form action="" method="post"> 
                         <tr>
                             <td class="labels">
-                                 <label for="first_name">First Name</label>
+                                 <label for="first_name"> <u>First Name</u> </label>
                             </td>
                             <td class="labels"> 
-                                <label for="last_name">Last Name</label>
+                                <label for="last_name"> <u>Last Name</u> </label>
                             </td>
                         </tr>
-                        <tr>
+                        <tr>                    
                             <td class="inputs"> 
-                                <input type="text" id="first_name" name="first_name" minlength="1" autocomplete="on"
+                                 <input type="text" id="first_name" name="first_name" minlength="1" autocomplete="on"
                                     required>
                             </td>
                             <td class="inputs">
                                 <input type="text" id="last_name" name="last_name" minlength="2" autocomplete="on"
-                                    required>
-                            </td>
+                                    required>  
+                            </td>                    
                         </tr>
                         <tr>
                             <td class="labels">
-                                <label for="phone_number">Phone Number</label>
+                                <label for="phone_number"> <u>Phone Number</u> </label>
                             </td>
                             <td class="labels">
-                                <label for="user_email">Email Address</label>
+                                <label for="user_email"> <u>Email Address</u> </label>
                             </td>
                         </tr>
                         <tr>
@@ -62,10 +57,10 @@
                         </tr>
                         <tr>
                             <td class="labels"> 
-                                <label for="user_password">Password:</label>
+                                <label for="user_password"> <u>Password:</u> </label>
                             </td>
                             <td >
-                                 <label for="user_password_confirm">Confirm Password:</label>
+                                 <label for="user_password_confirm"> <u>Confirm Password:</u> </label>
                             </td>
                         </tr>
                         <tr>
@@ -79,12 +74,21 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2" id="buttonContainer"> <button type="submit" class="buttons">Create Account</button>
+                            <td class="buttonContainer"> 
+                                <button type="submit" class="buttons">Create Account</button>
+                            </td>
+                            <td class="buttonContainer">
                                 <button type="reset" class="buttons">Clear Data</button>
                             </td>
                         </tr>
                     </form>
                 </table>
+            </div>
+            <div id="alreadyMember">
+                <p>Already a member?
+                    <br>
+                   <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form" target="_blank"> Click here </a>to login
+                </p>
             </div>
         </div>
     </div>
