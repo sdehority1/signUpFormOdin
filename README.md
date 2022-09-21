@@ -1,2 +1,2 @@
-# Building A Sign Up Form &#128221
-Need to add a font and figure out the javascript to insert the "-"s as needed in the phone number and confirm the passwords. 
+# Building A Sign Up Form 
+This is a simple sign up form I built. It is a challenge recommended by The Odin Project (see [here](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)). I did not implement a mobile view because it wasn't required. Using a table here to organize the form proved very helpful. 

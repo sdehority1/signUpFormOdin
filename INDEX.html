@@ -13,60 +13,63 @@
 
 <body>
     <div id="container">
-        <div id="containerLeftSide"> <img id="picture" src="IMAGES/Image.jpg" alt=""></div>
+        <div id="containerLeftSide">
+            <img id="picture" src="IMAGES/Image.jpg" alt="">
+        </div>
 
         <div id="containerRightSide">
             <h1 id="header"> Sign up for this service!</h1>
             <div id="formContainer">
                 <table>
-                    <form action="" method="post"> 
+                    <form action="" method="post" onSubmit="return checkPassword(this)">
                         <tr>
                             <td class="labels">
-                                 <label for="first_name"> <u>First Name</u> </label>
+                                <label for="first_name"> <u>First Name</u> </label>
                             </td>
-                            <td class="labels"> 
+                            <td class="labels">
                                 <label for="last_name"> <u>Last Name</u> </label>
                             </td>
                         </tr>
-                        <tr>                    
-                            <td class="inputs"> 
-                                 <input type="text" id="first_name" name="first_name" minlength="1" autocomplete="on"
+                        <tr>
+                            <td class="inputs">
+                                <input type="text" id="first_name" name="first_name" minlength="1" autocomplete="on"
                                     required>
                             </td>
                             <td class="inputs">
                                 <input type="text" id="last_name" name="last_name" minlength="2" autocomplete="on"
-                                    required>  
-                            </td>                    
+                                    required>
+                            </td>
                         </tr>
                         <tr>
                             <td class="labels">
-                                <label for="phone_number"> <u>Phone Number</u> </label>
+                                <label for="phone_number"> <u>Phone Number</u></label>
                             </td>
                             <td class="labels">
                                 <label for="user_email"> <u>Email Address</u> </label>
                             </td>
                         </tr>
                         <tr>
-                            <td class="inputs"> 
+                            <td class="inputs">
                                 <input type="tel" id="phone_number" name="phone_number" minlength="12" maxlength="12"
-                                    autocomplete="on" placeholder="xxx-xxx-xxxx" required>
+                                    autocomplete="on" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    required>
                             </td>
                             <td class="inputs">
-                                <input type="email" id="user_email" name="email" autocomplete="on" required>
+                                <input type="email" id="user_email" name="email" autocomplete="on"
+                                    placeholder="example@example.com" required>
                             </td>
                         </tr>
                         <tr>
-                            <td class="labels"> 
+                            <td class="labels">
                                 <label for="user_password"> <u>Password:</u> </label>
                             </td>
-                            <td >
-                                 <label for="user_password_confirm"> <u>Confirm Password:</u> </label>
+                            <td>
+                                <label for="user_password_confirm"> <u>Confirm Password:</u> </label>
                             </td>
                         </tr>
                         <tr>
                             <td class="inputs">
-                                <input type="password" id="user_password" name="passwordConfirm" autocomplete="on"
-                                    required>
+                                <input type="password" id="user_password" name="password" autocomplete="on" required>
                             </td>
                             <td class="inputs">
                                 <input type="password" id="user_password_confirm" name="passwordConfirm"
@@ -74,7 +77,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="buttonContainer"> 
+                            <td class="buttonContainer">
                                 <button type="submit" class="buttons">Create Account</button>
                             </td>
                             <td class="buttonContainer">
@@ -84,15 +87,17 @@
                     </form>
                 </table>
             </div>
-            <div id="alreadyMember">
-                <p>Already a member?
+            <div id="alreadyMember" onclick="location.href='https://www.theodinproject.com/login';">
+                <p>
+                    <i>Already a member?</i>
                     <br>
-                   <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form" target="_blank"> Click here </a>to login
+                    <br>
+                    <b>Click here to log in</b>
                 </p>
             </div>
         </div>
     </div>
-
+    <script src="logic.js"></script>
 </body>
 
 </html>

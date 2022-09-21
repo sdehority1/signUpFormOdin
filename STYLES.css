@@ -380,20 +380,31 @@ template {
 
 
 /* START HERE  */
-#header{
+
+
+
+body {
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header {
   text-align: center;
 }
+
 #container {
   width: 80%;
   display: flex;
   height: 100vh;
   margin-left: 10%;
-  margin-bottom: 2%;
+  margin-bottom: .5%;
+  margin-top: .5%;
   border-radius: 20px;
   border: solid;
-  border-color: black;
+  border-color: white;
   border-width: .5px;
   overflow: hidden;
+
 }
 
 #containerLeftSide {
@@ -436,7 +447,7 @@ table {
 #containerRightSide {
   display: flex;
   flex-direction: column;
-  height:100%;
+  height: 100%;
 }
 
 
@@ -449,29 +460,29 @@ table, th, td, tr {
   border-collapse: collapse;
 }
 
-.labels{
-  height: 1em; 
+.labels {
+  height: 1em;
   font-size: medium;
 }
 
-.inputs{
+.inputs {
   height: 1em;
 }
 
 
-.buttons {  
+.buttons {
   width: 50%;
   height: 1.5em;
-  background-color: rgb(211, 211, 211, 0.2): 
+  background-color: rgb(211, 211, 211, 0.2):
 }
 
-.buttonContainer{
-  align-items: center;  
+.buttonContainer {
+  align-items: center;
   width: 50%;
   height: 10%;
 }
 
-#alreadyMember{
+#alreadyMember {
   text-align: center;
   justify-content: baseline;
   height: 10%;
@@ -482,8 +493,9 @@ table, th, td, tr {
   border-radius: 20px;
   background-color: white;
   height: 12%;
+  cursor: pointer;
 }
 
-#alreadyMember:hover{
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+#alreadyMember:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
