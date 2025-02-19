@@ -412,6 +412,7 @@ body {
   width: 40%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 #floatingCopy{
@@ -419,6 +420,10 @@ body {
   border: 1px solid red; 
   position: absolute;
   color: white; 
+  top: 50%; 
+  height: 4em; 
+  background-color: black;
+  opacity: 50%;
 }
 
 #picture {
