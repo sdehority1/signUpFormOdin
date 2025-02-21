@@ -415,16 +415,31 @@ body {
   position: relative;
 }
 
-#floatingCopy{
-  width: 100%;
-  border: 1px solid red; 
+
+#floatingCopy {
+  width: 60%;
   position: absolute;
-  color: white; 
-  top: 50%; 
-  height: 4em; 
-  background-color: black;
-  opacity: 50%;
+  color: white;
+  top: 0px;
+  right: 0%;
+  /*clip-path: polygon(10% 10%,90% 10%,90% 90%,10% 90%);*/
+  height: 6em;
+  width: 6em;
+  background-color: wheat;
+  opacity: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 45deg;
 }
+
+#starShip {
+  opacity: 100%;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 #picture {
   width: 100%;
@@ -473,7 +488,7 @@ table, th, td, tr {
 }
 
 td {
-padding: 0%;
+  padding: 0%;
 }
 
 .labels {
